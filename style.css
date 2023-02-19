@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --btn-bg-color: #596D48;
+    --focused-input-border: blue;
+    --input-box-shadow: box-shadow: 5px 8px 14px -7px rgba(0, 0, 0, 1);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: #f8f8f8;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.logo-section {
+    background: no-repeat center url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    align-self: center;
+    margin-top: 300px;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h2 {
+    font-size: 2rem;
+}
+
+.logo-section p {
+    position: absolute;
+    bottom: 10px;
+}
+
+.logo-section a {
+    color: white;
+}
+
+.form-section {
+    width: 66%;
+}
+
+.disclaimer {
+    font-size: 1.35rem;
+    padding: 10rem 1rem 2rem;
+    font-weight: 500;
+}
+
+form {
+    background: white;
+    box-shadow: var(--input-box-shadow);
+    padding: 15px;
+}
+
+form p {
+    color: #8d8d8d;
+    font-size: 1.35rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.inputs {
+    display: flex;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 40ch;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 5px 8px 14px -7px rgba(0, 0, 0, 1);
+}
+
+button {
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px 0 15px 15px;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    background: var(--btn-bg-color);
+    border-radius: 10px;
+}
+
+p:last-of-type {
+    margin-left: 15px;
+}
+
+.form-section p:last-of-type a {
+    color: var(--btn-bg-color);
+}
+
+.error {
+    border: 1px solid red;
+    position: relative;
+}
+
